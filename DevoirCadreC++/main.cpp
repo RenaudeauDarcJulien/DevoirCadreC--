@@ -4,7 +4,6 @@ int main()
 {
 	bool quitter = false;
 	Cadre cadre;
-
 	int choix = 0;
 	int taille = 0;
 	//Demande a l'utilisateur l'action qu'il souhaite effectuer
@@ -65,19 +64,19 @@ int main()
 			system("CLS");
 			printf("\n");
 			for (int i = 1; i <= cadre.getLongueur(); i++) {
-				printf("*");
+				printf("%c", cadre.getMotif());
 			}
 			printf("\n");
 			for (int i = 2; i<cadre.getLargeur(); i++) {
-				printf("*");
+				printf("%c", cadre.getMotif());
 				for (int j = 2; j<cadre.getLongueur(); j++) {
 					printf(" ");
 				}
-				printf("*");
+				printf("%c", cadre.getMotif());
 				printf("\n");
 			}
 			for (int i = 1; i <= cadre.getLongueur(); i++) {
-				printf("*");
+				printf("%c", cadre.getMotif());
 			}
 			printf("\n");
 			break;
